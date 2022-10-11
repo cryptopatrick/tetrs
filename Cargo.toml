@@ -8,3 +8,7 @@ edition = "2021"
 [dependencies]
 sdl2 = "0.30.0"
 
+[features]
+# Below, *sdl2* is that crate where there's a features we'd like to enable
+# and *image* is the feature we'd like to enable.
+default = ["sdl2/image"]
